@@ -1,6 +1,7 @@
 package main.java.list;
 
-import java.util.logging.LogManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import main.java.list.operacoes.basicas.ListaTarefa;
 
