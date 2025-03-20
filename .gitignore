@@ -39,3 +39,7 @@ replay_pid*
 
 # Built Visual Studio Code Extensions
 *.vsix
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
