@@ -1,9 +1,20 @@
 package main.java.list;
 
+import java.util.logging.LogManager;
+
 import main.java.list.operacoes.basicas.ListaTarefa;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
 
+    public void meuMetodo() {
+        logger.debug("Mensagem de debug");
+        logger.info("Mensagem de informação");
+        logger.warn("Mensagem de aviso");
+        logger.error("Mensagem de erro");
+        logger.fatal("Mensagem fatal");
+    }
+   
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         ListaTarefa tarefas = new ListaTarefa();
