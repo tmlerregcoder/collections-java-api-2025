@@ -3,7 +3,7 @@ package com.estudo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.estudo.list.operacoes.basicas.ListaTarefa;
+import com.estudo.list.operacoesBasicas.ListaTarefa;
 
 public class App {
 
@@ -13,6 +13,7 @@ public class App {
 
         System.out.println("Hello, World!");
         ListaTarefa tarefas = new ListaTarefa();
+        System.err.println("O número total de tarefas é: " + tarefas.obterNumeroTotaldeTarefas());
         for (int i = 1; i <= 5; i++) {
             tarefas.adicionarTarefa("Tarefa " + i);
             final int ii = i;
@@ -21,6 +22,9 @@ public class App {
                 meuMetodo();
             });
         }
+        System.out.println("O número total de tarefas é: " + tarefas.obterNumeroTotaldeTarefas());
+        tarefas.obterDescricoesTarefas();
+
     }
 
     public static final void meuMetodo() {
