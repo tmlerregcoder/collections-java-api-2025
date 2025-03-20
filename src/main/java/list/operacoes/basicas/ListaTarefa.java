@@ -7,6 +7,14 @@ public class ListaTarefa {
 
     private List<Tarefa> tarefaList;
 
+    public List<Tarefa> getTarefaList() {
+        return tarefaList;
+    }
+
+    public void setTarefaList(List<Tarefa> tarefaList) {
+        this.tarefaList = tarefaList;
+    }
+
     public ListaTarefa() {
         this.tarefaList = new ArrayList<>();
     }
