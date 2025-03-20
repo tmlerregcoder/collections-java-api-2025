@@ -44,3 +44,5 @@ target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/create
 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
 target/classes/*
 target/*
+target/classes/log4j2.xml
+
