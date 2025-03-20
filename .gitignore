@@ -2,8 +2,7 @@
 *.class
 
 # Compiled source directory
-.classes\*
-.target\*
+
 
 # Log file
 *.log
@@ -44,3 +43,4 @@ target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
 target/classes/*
+target/*
