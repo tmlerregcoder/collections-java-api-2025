@@ -11,28 +11,19 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println("Hello, World!");
+        logger.debug("Hello, World!");
         ListaTarefa tarefas = new ListaTarefa();
-        System.err.println("O número total de tarefas é: " + tarefas.obterNumeroTotaldeTarefas());
+        logger.debug("O número total de tarefas é: " + tarefas.obterNumeroTotaldeTarefas());
         for (int i = 1; i <= 5; i++) {
             tarefas.adicionarTarefa("Tarefa " + i);
             final int ii = i;
             tarefas.getTarefaList().forEach(action -> {
-                System.out.println("Testando tarefa: tarefa de numero = " + ii + "." + action.getDescricao());
-                meuMetodo();
+                logger.debug("Testando tarefa: tarefa de numero = " + ii + "." + action.getDescricao());               
             });
         }
-        System.out.println("O número total de tarefas é: " + tarefas.obterNumeroTotaldeTarefas());
+        logger.debug("O número total de tarefas é: " + tarefas.obterNumeroTotaldeTarefas());
         tarefas.obterDescricoesTarefas();
 
-    }
-
-    public static final void meuMetodo() {
-        logger.debug("Mensagem de debug");
-        logger.info("Mensagem de informação");
-        logger.warn("Mensagem de aviso");
-        logger.error("Mensagem de erro");
-        logger.fatal("Mensagem fatal");
     }
 
 }
